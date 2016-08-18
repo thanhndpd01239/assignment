@@ -1,0 +1,396 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 06-11-2015, 09:55:02
+    Author     : quang
+*/
+body{
+    background-image: url(../image/wood.jpg);
+    font-family: 'Lato',Arial,sans-serif;
+    margin: 0px;
+}
+main{
+    width: 1024px;
+    margin: auto;
+}
+header{
+    width: 100%;
+}
+#topheader{
+    width: 100%;
+    height: 40px;
+    background: white;
+    opacity: 0.4;
+}
+#topheader h1{
+    color: red;
+    margin: 5px;
+    float: left;
+}
+#logandres{
+    width: auto;
+    height: 30px;
+    float: right;
+    
+}
+#search{
+    width: auto;
+}
+input[type=search]{
+    width: 300px;
+    height: 30px;
+}
+nav{
+    width: 100%;
+    margin-bottom: 20px;
+    background-image: url('../image/bg-menu.jpg');
+    border-radius: 0 0 10px 10px;
+ }
+nav ul{
+    height: 54px;
+    margin: 0;
+}
+nav ul li{
+    display: inline;
+    float: left;
+    font-size: 15px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    color: rgb(229, 77, 38);
+    width: auto;
+    height: auto;    
+}
+nav ul li:hover{
+    color: rgb(236, 236, 236);
+}
+nav ul li a{
+    color: white;
+    padding: 18px 0px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: #ee3124;
+    transition: all 400ms;
+    -moz-transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms; 
+}
+.f-nav{
+    z-index: 9999;
+    position: fixed; 
+    top: 0px;
+    width: 1024px;
+}
+#searchbox {
+    background: url(../image/search-box.png) no-repeat;
+    height: 27px;
+    width: 202px;
+    margin: 12px 0;
+    float: right;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+#searchbox input {
+    outline: none;
+}
+#searchbox input[type="text"] {
+    background: transparent;
+    margin: 0px 0px 0px 12px;
+    padding: 5px 0px 5px 0px;
+    border-width: 0px;
+    font-family: "Arial Narrow", Arial, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    width: 77%;
+    color: #828282;
+    display: inline-table;
+    vertical-align: top;
+}
+#button-submit {
+    background: url(../image/search-button.png) no-repeat;
+    border-width: 0px;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+}
+#button-submit:hover {
+    background: url(../image/search-button-hover.png) no-repeat;
+    transition: all 400ms;
+    -moz-transition: all 400ms;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms; 
+}
+#button-submit::-moz-focus-inner {
+    border: 0;
+}
+
+section{
+    width: 100%;
+    height: auto;
+}
+#left{
+    width: 250px;
+    height: 100%;
+    float: left;
+    text-align: center;
+ }
+.leftofleft{
+    border: 1px gray solid;
+    width: 98%;
+    height: 50%;
+    border-radius: 0 0 10px 10px;
+    background: rgb(236, 236, 236);
+}
+.leftofleft h1{
+    background: gray;
+    margin: 0;
+    padding: 5px;        
+}
+.leftofleft ul{
+    text-align:left;
+    margin-left: -40px;
+}
+.leftofleft ul li{
+    list-style-type:none;
+    margin: 10px ;    
+}
+.leftofleft ul li a img{
+    margin-right: 5px;
+}
+.leftofleft ul li a{
+    text-decoration: none;
+    color: rgb(163, 98, 0);
+}
+.leftone{
+    border-top: 10px gray solid;
+    padding-top: 20px; 
+    height: 150px;
+}
+.lefttwo{
+    margin-top: 10px;
+}
+.titleleft{
+    text-align: center;
+    width: 90%;
+    border-bottom: 1px gray solid;
+}
+#right{
+    width: 774px;
+    height: auto;
+    padding-bottom: 20px;
+    background: rgb(236, 236, 236);
+    float: left;
+    border-top: 10px gray solid;
+    border-radius: 0 0 10px 10px;
+}
+.productlist{
+    width: 240px;
+    height: auto;
+    margin: 10px 0 5px 10px;
+    float: left;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px #888888;
+    background: white;
+}
+.productlistimg{
+    margin: 10px 20px;
+    float: left;
+    border-bottom: 1px gray solid;
+}
+.productlist h1{
+    font: 20px/1.4 "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+.productlist h3{
+    font: 12px/1.4 "Helvetica Neue","HelveticaNeue",Helvetica,Arial,sans-serif;
+    opacity: 0.5;
+    margin: 3px 0 0 20px;
+    width: 205px;
+    height: 18px;
+    overflow: hidden;
+}
+.productlist h3 p{
+    margin: 0;
+}
+.price{
+    text-align: center;
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+    margin: 0;
+}
+.productsale{
+    width: 256px;
+    float: left;
+    background: #EDECF2 none repeat scroll 0% 0%;
+    position: relative;
+    z-index: 1;
+}
+ .toursale{
+    left: 6px;
+    top: 6px;
+    background: transparent url("../image/toursale.png") no-repeat scroll 0% 0%;
+    width: 71px;
+    height: 70px;
+    z-index: 20;
+    position: absolute;
+}
+.toursale span{
+    text-transform: uppercase;
+    color: #FFF;
+    float: left;
+    font-weight: bold;
+    font-size: 11px;
+    margin: 18px 0px 0px;
+    transform: rotate(-43deg);
+    -webkit-transform: rotate(-43deg);
+}
+.productlistimg img{
+    width: 200px;
+    height: 200px;
+}
+.productbutton{
+    margin: 10px auto;
+    width: 200px;
+    
+}
+
+
+
+
+
+
+footer{
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    background-image: url(../image/bg-footer.jpg);
+    float: left;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+footer h1{
+    font-family: Mystical;
+    font-size: 30px;
+    margin: 10px;
+}
+footer p{
+    margin: 1px;
+    color: #999999;
+}
+
+#rightlog{
+    width: 100%;
+    height: 400px;
+    padding-bottom: 20px;
+    background: rgb(236, 236, 236);
+    float: left;
+    border-top: 10px gray solid;
+    border-radius: 0 0 10px 10px;
+}
+#tblogin{
+    
+    margin: auto;
+    padding-top: 20px;
+}
+#tblogin tr td{
+    padding-top: 0;
+}
+#rightadmin{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    background: rgb(236, 236, 236);
+    float: left;
+    border-top: 10px gray solid;
+    border-radius: 0 0 10px 10px;
+}
+#rightadmin form{
+    width: 420px;
+    margin: auto;
+}
+#add input{
+    width: 300px;
+    height: 30px;
+}
+.textform{
+    width: 100%;
+    height: 30px;;
+    margin-top: 20px;
+}
+.tentable{
+    width: 100px;
+    height: auto;
+}
+
+#pagination{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    height: 30px;
+    float: left;
+}
+#pagination a, span.current{ 
+    text-decoration:none; 
+    padding:0px 10px; 
+    border:1px solid #CCC; 
+    border-radius:3px; 
+    margin-right:3px; 
+    color:#090;
+    font-size:18px
+}
+span.current{
+    color:#F00; 
+    font-weight:bold
+}
+#adm table{
+     font:15px "Courier New", Courier, monospace
+}
+#pagination{
+    width:100%; 
+    margin-top:15px; 
+    text-align:center;
+}
+#pagination a, span.current{ 
+    text-decoration:none; 
+    padding:0px 10px; 
+    border:1px solid #CCC; 
+    border-radius:3px; 
+    margin-right:3px; 
+    color:#090;
+    font-size:13px
+}
+span.current{ 
+    color:#F00; 
+    font-weight:bold;
+}
+#tblmember td{
+    border:1px solid #333; 
+    padding:3px 5px
+}
+#tblmember tr.title td{
+    height:22px;
+    font-weight:normal;
+    text-align:center;
+    background:#333;
+    color:#FFF
+}
+.red{color:#F00}
+td a{    color: red;
+    text-decoration: none;}
